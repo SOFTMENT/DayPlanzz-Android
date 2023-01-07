@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AccountFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/main_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montsemibold"
+            android:text="Konto"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar"
+        >
+    <LinearLayout
+
+        android:visibility="visible"
+        android:id="@+id/userAccountLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="0dp"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/applogo" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montsemibold"
+            android:text="Vijay Rathore"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/emailID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/montmedium"
+            android:text="support@softment.in"
+            android:textColor="#999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montbold"
+            android:text="Inställningar"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/favOrganiser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montsemibold"
+                android:text="Sparad arrangör"
+
+                android:textColor="#555555"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:background="#888" />
+            />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/minaAndAddEventLL"
+            >
+            <RelativeLayout
+                android:id="@+id/myEvent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:textColor="#555555"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/montsemibold"
+                    android:text="Mina Event"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:background="#888" />
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addEvent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:textColor="#555555"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/montsemibold"
+                    android:text="Lägg till event"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:background="#888" />
+                />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/addLocations"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/montsemibold"
+                    android:text="Redigera namn och platser"
+                    android:textColor="#555555"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:background="#888" />
+                />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:textColor="#555555"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montsemibold"
+                android:text="Logga ut"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:background="#888" />
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editProfileUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montsemibold"
+                android:text="Hantera Konto"
+                android:textColor="#555555"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:background="#888" />
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/favCat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montsemibold"
+                android:text="Favorit kategorier"
+                android:textColor="#555555"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:background="#888" />
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editProfileOrganiser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montsemibold"
+                android:text="Redigera Profil"
+                android:textColor="#555555"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:background="#888" />
+            />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/signinupLL"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/applogo"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logga In"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/montbold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Med ett eget konto kan du spara dina inställningar och favoriter mellan dina enheter.
+Du kan ocksä lägga ut egna event med ett konto."
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/montmedium"
+            android:textSize="13sp"
+            android:textAlignment="center"
+
+            />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_back"
+            android:hint="Skriv in e-mail"
+            android:fontFamily="@font/montmedium"
+            android:textSize="13sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_back"
+            android:hint="Skriv in lösenord"
+            android:fontFamily="@font/montmedium"
+            android:textSize="13sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/resetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:textSize="13sp"
+            android:fontFamily="@font/montbold"
+            android:text="GLÖMT DITT LÖSENORD?"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#03A9F4"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signinbtn"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Logga in"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_normal_back"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Har du inget konto?"
+                    android:fontFamily="@font/montmedium"
+                    android:textSize="13sp"
+                    />
+                <TextView
+                    android:id="@+id/signUp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skapa konto"
+                    android:fontFamily="@font/montmedium"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

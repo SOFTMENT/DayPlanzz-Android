@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <in.softment.dayplanzz.Utils.NonSwipeAbleViewPager
+        android:background="#fafafa"
+        android:id="@+id/viewpager"
+        android:layout_above="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#E8E8E8"
+        android:layout_above="@+id/tabLayout"
+        android:id="@+id/line"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextAppearance="@style/MyTabTextAppearance"
+        app:tabTextColor="@color/tab_layout"
+        app:tabBackground="@color/main_color"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FAFAFA"
+        app:tabGravity="fill"
+        app:tabIconTint="@color/tab_layout"
+        app:tabIndicator="@color/black"
+        app:tabMode="fixed"
+        app:tabRippleColor="@android:color/transparent"
+        />
+
+</RelativeLayout>

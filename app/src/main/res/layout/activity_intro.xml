@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntroActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/main_color"
+        >
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/back"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:layout_marginStart="16dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_view"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_content_paste_24"
+            />
+    </RelativeLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:text="En välkomnande text här. Appens pitch i nagra fä ord. Beskriv fördelarna med appen."
+    android:layout_marginTop="32dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:textAlignment="center"
+    android:fontFamily="@font/montsemibold"
+    android:textColor="#555555"
+    android:textSize="15sp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="För att kunna använda appens funktioner behöver appen tillgang till din position."
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/montsemibold"
+        android:textColor="#555555"
+        android:textSize="15sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/allow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="44dp"
+        android:text="TILLÅT POSITION"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montsemibold"
+        android:textColor="#555555"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/notAllowed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:text="TILLÅT INTE"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montsemibold"
+        android:textColor="#555555"
+
+        />
+
+</LinearLayout>

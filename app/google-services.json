@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243007496215",
+    "project_id": "dayplanzz",
+    "storage_bucket": "dayplanzz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243007496215:android:22071e9e673ba812f9bc52",
+        "android_client_info": {
+          "package_name": "in.softment.dayplanzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243007496215-92ru6p63vtiq9oivsf01rho15u0sfla0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI4NzSqLklxywkaTYhPq8XyetX4M_9SGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243007496215-92ru6p63vtiq9oivsf01rho15u0sfla0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
